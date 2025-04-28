@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PORTOFOLIO-NANCY</title>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <center><h1>PORTOFOLIO</h1></center>
+
+            <nav>
+                <ul>
+                    <li><a href="#Tentang Saya">Tentang Saya</a></li>
+                    <li><a href="#Projek">Projek</a></li>
+                    <li><a href="#Hobi">Hobi</a></li>
+                    <li><a href="#Film Favorit">Film Favorit</a></li>
+                    <li><a href="#Musik Favorit">Musik Favorit</a></li>
+                    <li><a href="#Kontak">Kontak</a></li>
+                    <li><a href="#Kritik & Saran">Kritik & Saran</a></li>
+                    <li><a href="#BukuTamu">Buku Tamu</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+    <main>
+        <section ID="Tentang Saya">
+        <h2>Tentang Saya</h2> 
+        <p>Saya merupakan mahasiswa aktif jurusan Sistem Informasi yang memiliki minat untuk mempelajari desain UI/UX, 
+            mengikuti berbagai organisasi dan kepanitiaan baik di dalam maupun di luar kampus, 
+            serta aktif dalam mengembangkan diri melalui UKM yang saya ikuti. 
+            Saya adalah orang yang mudah beradaptasi dan mampu bekerja dalam tim dengan latar belakang yang berbeda.</p>
+            <center><img src="UISI7229.JPG" width="250px" height="auto"></section></center>
+    </section>
+
+    <section ID="Projek">
+        <h2>Projek</h2>
+        <div class="project-grid">
+            <div class="project-item">
+                <h3>1. Desain UI/UX Aplikasi "Stationery Pal"</h3>
+                <img src="Screenshot 2025-04-11 191648.png" alt="Stationery Pal">
+                <p>Aplikasi Stationery Pal yang menjual berbagai macam perlengkapan alat tulis kantor dan buku dengan menggunakan tools Figma.</p>
+            </div>
+            <div class="project-item">
+                <h3>2. Desain UI/UX Aplikasi "Suara Rakyat (SURAT)"</h3>
+                <img src="Screenshot 2025-04-11 193545.png" alt="Suara Rakyat">
+                <p>Aplikasi Suara Rakyat (SURAT) yang membantu masyarakat dalam menyalurkan hak suara mereka saat pemilu berlangsung dengan menggunakan tools Figma.</p>
+            </div>
+        </div>
+    </section>
+
+    <section ID="Hobi">
+        <h2>Hobi</h2>
+        <ul> <li> Menonton Film
+            <li> Membaca Novel
+            <li> Mendengarkan Musik 
+            <li> Berpergian
+         </ul>
+    </section>
+
+    <section ID="Film Favorit">
+        <h2>Film Favorit</h2>
+        <div class="video-grid">
+            <video controls>
+                <source src="garfield the movie.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+    <section id="MusikFavorit">
+    <h2>Musik Favorit</h2>
+    <div class="music-grid">
+            <h3>♪ LANY - you! ♫</h3>
+            <audio controls>
+                <source src="LANY  you! (official lyric video).mp3" type="audio/mpeg">
+            </audio>
+    </div>
+    </section>
+
+    <section ID="Kontak">
+        <h2>Kontak</h2>
+        <nav>
+            <ul>
+                <li>Instagram: <a href="https://www.instagram.com/naancytr?igsh=YmcwOHVmNHZmdGg2/">@naancytr</a></li>
+                <li>Linkedin: <a href="https://www.linkedin.com/in/nancy-tamariska-8929082a3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Nancy Tamariska</a></li>
+                <li>Email: <a href="mailto:nancy.tamariska23@student.uisi.ac.id">nancy.tamariska23@student.uisi.ac.id</a>
+            </ul>
+        </nav>
+    </section> 
+
+    <section ID="Kritik & Saran">
+        <h2>Kritik & Saran</h2>
+        <form>
+            <label for="name">Nama:</label>
+            <br>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="email">Email:</label>
+            <br>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="Pilihan">Pilihan:</label>
+            <br>
+            <select id="Pilihan" name="Pilihan" required>
+                <option value="kritik">Kritik</option>
+                <option value="Saran">Saran</option>
+            </select>
+            <br>
+            <label for="message">Pesan:</label>
+            <br>
+            <textarea id="message" name="message" required></textarea>
+            <br>
+            <input type="submit" value="Kirim">
+        </form>
+    </section>
+
+    <section id="BukuTamu">
+        <h2>Buku Tamu</h2>
+        <form id="guestBookForm">
+            <label for="guestName">Nama Tamu:</label>
+            <input type="text" id="guestName" name="guestName" required>
+            <br>
+            <label for="guestMessage">Pesan:</label>
+            <textarea id="guestMessage" name="guestMessage" required></textarea>
+            <br>
+            <button type="submit">Tambahkan</button>
+        </form>
+        <h3>Daftar Tamu:</h3>
+        <div id="guestList"></div>
+    </section>
+    </main>
+    <script src="script.js"></script>
+    </body>
+
+    <footer>
+        <center><p>© 2025 Nancy Tamariska | Semua Hak Cipta Dilindungi</p></center>
+    </footer>
+</html>
